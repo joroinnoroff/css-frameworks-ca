@@ -1,0 +1,58 @@
+ 
+
+@import "variables";
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+
+.lc{
+  color: #5100ff;
+}
+
+.filter-item {
+  transition: background-color 0.3s, color 0.3s;
+  cursor: pointer;
+}
+
+.filter-item.active {
+  background-color: black;
+  color: white;
+}
+
+textarea{
+  resize: none;
+}
+.clear{
+  cursor: pointer;
+}
+
+.form-color{
+  background: #8A84E2;
+ 
+}
+.dicon{
+  width: 40px;
+  margin-top: 10px;
+}
+
+select{
+  border-radius: 5px;
+}
+
+.badge {
+  cursor: pointer;
+}
+
+.pin{
+  cursor: pointer;
+}
