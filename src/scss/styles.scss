@@ -1,19 +1,14 @@
  
 
 @import "variables";
+
+
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
-
-
-a {
+a{
   color: #fff;
-  text-decoration: none;
 }
-
 
 .lc{
   color: #5100ff;
