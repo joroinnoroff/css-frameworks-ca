@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signed in & Discover</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="/dist/css/styles.css" />
+  </head>
+  <body>
+    <header class="p-3 mb-3 border-bottom">
+      <div class="container">
+        <div
+          class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start"
+        >
+          <a
+            href="/"
+            class="d-flex align-items-center mb-2 mb-lg-0 text-decoration-none fs-1 fw-semibold lc"
+            >Twibble™
+          </a>
+
+          <ul
+            class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0"
+          >
+            <li>
+              <a href="#" class="nav-link px-2 link-secondary">Home</a>
+            </li>
+
+            <li>
+              <a href="#" class="nav-link px-2 link-body-emphasis">Trending</a>
+            </li>
+            <button type="button" class="btn btn-primary position-relative">
+              Inbox
+              <span
+                class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+              >
+                20+
+                <span class="visually-hidden">unread messages</span>
+              </span>
+            </button>
+          </ul>
+
+          <div class="dropdown text-end">
+            <a
+              href="#"
+              class="d-block link-body-emphasis text-decoration-none dropdown-toggle"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <img
+                src="https://github.com/mdo.png"
+                alt="mdo"
+                width="32"
+                height="32"
+                class="rounded-circle"
+              />
+            </a>
+            <ul class="dropdown-menu text-small" style>
+              <li>
+                <a class="dropdown-item" href="/pages/Profile.html">Profile</a>
+              </li>
+              <li><hr class="dropdown-divider" /></li>
+              <li><a class="dropdown-item" href="/index.html">Sign out</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="container-fluid">
+        <div class="w-50 m-4">
+          <div class="form-outline">
+            <h1>Create a Post</h1>
+            <textarea
+              placeholder="Share whats on Your Mind &nbsp; @username"
+              class="form-control"
+              id="textAreaExample1"
+              rows="4"
+            ></textarea>
+            <div class="d-flex gap-2 justify-content-center align-items-center">
+              <select
+                name="Category"
+                className="rounded-sm"
+                aria-placeholder="Category"
+                id=""
+              >
+                <option value="Category">Category</option>
+                <option value="Music">Music</option>
+                <option value="Culture">Culture</option>
+                <option value="News">News</option>
+                <option value="Politics">Politics</option>
+              </select>
+              <div className="hover:p-2 hover:transition-all">
+                <button
+                  class="btn btn-primary mt-3 hover:px-5 hover:transition-all"
+                >
+                  Create +
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="container">
+          <h3 class="opacity-75">Filter Posts</h3>
+
+          <div class="filter">
+            <ul class="nav gap-3 p-3">
+              <li class="clear border p-2 rounded-4">All</li>
+              <li class="border p-2 rounded-4 filter-item">Most Recent</li>
+              <li class="border p-2 rounded-4 filter-item">Music</li>
+              <li class="border p-2 rounded-4 filter-item">Culture</li>
+              <li class="border p-2 rounded-4 filter-item">News</li>
+              <li class="border p-2 rounded-4 filter-item">Politics</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="card">
+              <div class="card-body">
+                <img
+                  src="https://github.com/rnd.png"
+                  alt="mdo"
+                  width="32"
+                  height="32"
+                  class="rounded-circle"
+                />
+
+                <h5>Username</h5>
+                <div class="opacity-75">
+                  <span>Fri</span>
+                  <span>10:48</span>
+                </div>
+
+                <span class="badge rounded-pill text-bg-primary">Follow</span>
+                <h5 class="card-title">Special title treatment</h5>
+                <p class="card-text">
+                  With supporting text below as a natural lead-in to additional
+                  content.
+                </p>
+                <a href="#" class="btn btn-secondary">Like</a>
+                <a href="#" class="btn btn-primary">Comment</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="card">
+              <div class="card-body">
+                <img
+                  src="https://github.com/pas.png"
+                  alt="mdo"
+                  width="32"
+                  height="32"
+                  class="rounded-circle"
+                />
+
+                <h5>Username</h5>
+
+                <span class="badge rounded-pill text-bg-primary">Follow</span>
+                <div class="opacity-75">
+                  <span>Tue</span>
+                  <span>17:17</span>
+                </div>
+                <h5 class="card-title">Special title treatment</h5>
+                <p class="card-text">
+                  With supporting text below as a natural lead-in to additional
+                  content.
+                </p>
+                <a href="#" class="btn btn-secondary">Like</a>
+                <a href="#" class="btn btn-primary">Comment</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6">
+            <div class="card">
+              <div class="card-body">
+                <img
+                  src="https://github.com/pas.png"
+                  alt="mdo"
+                  width="32"
+                  height="32"
+                  class="rounded-circle"
+                />
+
+                <h5>Username</h5>
+                <span class="badge rounded-pill text-bg-primary">Follow</span>
+                <div class="opacity-75">
+                  <span>Mon</span>
+                  <span>13:27</span>
+                </div>
+                <h5 class="card-title">Special title treatment</h5>
+                <p class="card-text">
+                  With supporting text below as a natural lead-in to additional
+                  content.
+                </p>
+                <a href="#" class="btn btn-secondary">Like</a>
+                <a href="#" class="btn btn-primary">Comment</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6">
+            <div class="card">
+              <div class="card-body">
+                <img
+                  src="https://github.com/pas.png"
+                  alt="mdo"
+                  width="32"
+                  height="32"
+                  class="rounded-circle"
+                />
+
+                <h5>Username</h5>
+                <span class="badge rounded-pill text-bg-primary">Follow</span>
+
+                <div class="opacity-75">
+                  <span>Thu</span>
+                  <span>13:27</span>
+                </div>
+                <h5 class="card-title">Special title treatment</h5>
+                <p class="card-text">
+                  With supporting text below as a natural lead-in to additional
+                  content.
+                </p>
+                <a href="#" class="btn btn-secondary">Like</a>
+                <a href="#" class="btn btn-primary">Comment</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6">
+            <div class="card">
+              <div class="card-body">
+                <img
+                  src="https://github.com/pas.png"
+                  alt="mdo"
+                  width="32"
+                  height="32"
+                  class="rounded-circle"
+                />
+
+                <h5>Username</h5>
+                <span class="badge rounded-pill text-bg-primary">Follow</span>
+
+                <div class="opacity-75">
+                  <span>Sat</span>
+                  <span>13:27</span>
+                </div>
+                <h5 class="card-title">Special title treatment</h5>
+                <p class="card-text">
+                  With supporting text below as a natural lead-in to additional
+                  content.
+                </p>
+                <a href="#" class="btn btn-secondary">Like</a>
+                <a href="#" class="btn btn-primary">Comment</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6">
+            <div class="card">
+              <div class="card-body">
+                <img
+                  src="https://github.com/pas.png"
+                  alt="mdo"
+                  width="32"
+                  height="32"
+                  class="rounded-circle"
+                />
+
+                <h5>Username</h5>
+                <span class="badge rounded-pill text-bg-primary">Follow</span>
+
+                <div class="opacity-75">
+                  <span>Sun</span>
+                  <span>13:27</span>
+                </div>
+                <h5 class="card-title">Special title treatment</h5>
+                <p class="card-text">
+                  With supporting text below as a natural lead-in to additional
+                  content.
+                </p>
+                <a href="#" class="btn btn-secondary">Like</a>
+                <a href="#" class="btn btn-primary">Comment</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6">
+            <div class="card">
+              <div class="card-body">
+                <img
+                  src="https://github.com/pas.png"
+                  alt="mdo"
+                  width="32"
+                  height="32"
+                  class="rounded-circle"
+                />
+
+                <h5>Username</h5>
+                <span class="badge rounded-pill text-bg-primary">Follow</span>
+
+                <div class="opacity-75">
+                  <span>Wed</span>
+                  <span>13:27</span>
+                </div>
+                <h5 class="card-title">Special title treatment</h5>
+                <p class="card-text">
+                  With supporting text below as a natural lead-in to additional
+                  content.
+                </p>
+                <a href="#" class="btn btn-secondary">Like</a>
+                <a href="#" class="btn btn-primary">Comment</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="showmore d-flex align-items-center justify-content-center m-5"
+        >
+          <button class="btn btn-success btn-sm" id="showMoreButton">
+            Show more Posts
+          </button>
+        </div>
+
+        <nav aria-label="Page navigation example">
+          <ul class="pagination">
+            <li class="page-item">
+              <a class="page-link" href="#">Previous</a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <footer class="container-fluid mt-5 border-top px-5">
+        <div class="row">
+          <div class="row">
+            <ul
+              class="nav gap-2 align-items-center justify-content-center opacity-75 fw-semibold p-4"
+            >
+              <li>Privacy</li>
+              <li>Jobs</li>
+              <li>About</li>
+              <li>Contact</li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <script>
+      // Get references to the card elements and the "Show more Posts" button
+      const cards = document.querySelectorAll(".card");
+      const showMoreButton = document.getElementById("showMoreButton");
+
+      // Initially hide all cards beyond the first two
+      for (let i = 4; i < cards.length; i++) {
+        cards[i].style.display = "none";
+      }
+
+      // Add an event listener to the "Show more Posts" button
+      showMoreButton.addEventListener("click", () => {
+        for (let i = 4; i < cards.length; i++) {
+          // Toggle card visibility by changing the "display" property
+          if (
+            cards[i].style.display === "none" ||
+            cards[i].style.display === ""
+          ) {
+            cards[i].style.display = "block";
+            showMoreButton.textContent = "Show less Posts";
+          } else {
+            cards[i].style.display = "none";
+            showMoreButton.textContent = "Show more Posts";
+          }
+        }
+      });
+
+      const filterItems = document.querySelectorAll(".filter-item");
+      const removeFilter = document.querySelector(".clear");
+
+      // Add click event listeners to each filter item
+      filterItems.forEach((item) => {
+        item.addEventListener("click", () => {
+          // Remove the 'active' class from all filter items
+          filterItems.forEach((element) => {
+            element.classList.remove("active");
+          });
+
+          // Add the 'active' class to the clicked filter item
+          item.classList.add("active");
+        });
+      });
+
+      // Add click event listener to the "Clear All" button
+      removeFilter.addEventListener("click", () => {
+        // Remove the 'active' class from all filter items
+        filterItems.forEach((item) => {
+          item.classList.remove("active");
+        });
+      });
+    </script>
+  </body>
+</html>
